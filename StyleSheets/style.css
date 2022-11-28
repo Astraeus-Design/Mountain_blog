@@ -1,0 +1,102 @@
+/* stylesheet created for mountain blog site
+   This was completed at home after learning from books and web
+   resources W3C etc to understand positioning and also 
+   block, inline-block, float etc. Confusing terminology
+   regards relative, absolute etc that does not really convey 
+   purpose which is to set grid origin for referencing
+   offsets and position.
+*/
+
+* {
+    box-sizing: border-box;
+
+    font-family:'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+body{
+    background-color: rgb(226,236,255);
+}
+
+main{
+    /*display:inline-block;*/
+    width: 900px;
+    margin: 20px auto 50px auto;
+    background-color: white;
+
+}
+
+.title{
+    position:absolute;
+    display:inline-block;
+    padding: 20px;
+    background-color: rgba(199,199,199,0.65);
+    bottom: 50px;
+    left: 50px;
+} 
+
+.title h1{
+    font-size: 60px;
+    margin: 0px;
+}
+
+.title p{
+    font-size: 20px;
+    font-weight:600;
+    margin: 6px 0 0 0;
+}
+
+.hero{
+    /*display: inline-block;*/
+    width: 100%;
+    margin: 0;
+    position:relative;
+}
+
+.hero img{
+    width: 100%;
+    margin: 0;
+}
+
+#feature{
+    margin: 0px;
+}
+
+article{
+    margin: 10px 110px 0 110px;
+}
+
+#article-figure img{
+    width: 300px;
+    margin: 0;
+}
+
+#article-figure p{
+    font-size: 14px;
+}
+
+#article-figure{
+    float:right;
+    margin: 0 0 0 15px; 
+}
+
+.tags{
+    margin: 0;
+    padding: 20px 0;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: grey;
+}
+.tags span{
+    font-size: 12px;
+    color: white;
+    background-color: #4e8098;
+    margin: 0 5px 0 0;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+
+footer{
+    text-align: center;
+    padding: 10px 0 20px 0;
+}
